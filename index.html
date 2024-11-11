@@ -116,10 +116,15 @@
                 flex-direction: column; /* Alinha logo e texto verticalmente */
                 align-items: center;
                 text-align: center;
+                gap: 10px; /* Adiciona espaço entre o logo e o texto */
             }
             .content-wrapper {
                 flex-direction: column;
                 align-items: center;
+            }
+            .logo {
+                position: static; /* Remove a posição absoluta para permitir o fluxo normal */
+                margin-bottom: 10px; /* Espaço entre o logo e o texto */
             }
             iframe.folium-map {
                 height: 300px; /* Ajusta a altura do mapa em telas pequenas */
@@ -325,7 +330,7 @@
     </div>
 
     <div class="update-time">
-        Atualizado dia 08/11/2024 às 11:59:31
+        Atualizado dia 11/11/2024 às 16:04:35
     </div>
     
 </body>

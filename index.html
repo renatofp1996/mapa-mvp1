@@ -41,15 +41,19 @@
         }
         .content-wrapper {
             display: flex;
+            flex-direction: row;
+            width: 100%; /* Ocupa toda a largura da tela */
+            max-width: 1200px; /* Limita a largura máxima para manter a centralização */
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 20px;
+            margin: 0 auto; /* Centraliza o div horizontalmente */
+            height: auto; /* Altura dinâmica */
         }
         iframe.folium-map {
             flex: 2;
             width: 100%;
-            height: 400px;
+            height: 560px;
             max-width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -57,7 +61,7 @@
         }
         .map-container {
             flex: 2;
-            max-width: 50%; /* Ajuste padrão */
+            max-width: 100%; /* Ajuste padrão */
         }
         .table-container {
             flex: 1;
@@ -67,7 +71,7 @@
         }
         .modern-table {
             width: 100%; /* Mantenha 100% para preencher a largura do container */
-            max-width: 1600px; /* Adicione para limitar a largura */
+            max-width: 1200px; /* Adicione para limitar a largura */
             border-collapse: collapse;
             margin: 0;
             border-radius: 10px;
@@ -79,7 +83,7 @@
             border: none;
             padding: 4px 6px;
             text-align: right;
-            font-size: 8px;
+            font-size: 10px;
         }
         .modern-table th {
             background-color: #0073e6;
@@ -163,7 +167,7 @@
     <div class="content-wrapper">
         <div class="map-container">
             <!-- <iframe src="https://renatofp1996.github.io/mapa_teste_2/" class="folium-map" style="border:none;"></iframe> -->
-            <iframe src="map.html" class="folium-map" style="border:none;"></iframe> 
+            <iframe src="map.html" class="folium-map" style="border:none;"></iframe>
             <div class="footer-notes" style="margin-top: 10px; font-size: 10px; color: #555; max-width: 700px">
                 <p><strong>Nota:</strong>
                     A informação acima reflete de forma dinâmica as unidades consumidoras com registros de falta de energia em nossos sistemas operacionais.
